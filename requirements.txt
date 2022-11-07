@@ -9,3 +9,4 @@ seaborn==0.12.1
 statsmodels==0.13.2
 streamlit==1.14.0
 streamlit-lottie==0.0.3
+toml==0.10.2
