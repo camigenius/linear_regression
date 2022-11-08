@@ -26,6 +26,9 @@ st.set_page_config(
 
 # Using "with" notation
 
+st.header('🏠App de Pronóstico del  valor de un Inmueble en la ciudad de Bogotá-Col🌲')
+
+st.write('---')
 st.subheader('App Developed by:')
 
 with st.container():
@@ -35,18 +38,23 @@ with st.container():
 
     
     with col1:
-        
+        #st.image("logo_u.jpg",caption='Universidad Los Libertadores')
+        st.markdown('### 🤖 Camilo Franco Guzmán.')
+        st.markdown('*Especialista en Estadistica ,Economista y Científico de Datos* (🇨🇴).')
+        st.markdown('Visita my linkedin :https://www.linkedin.com/in/camilofrancog/')
+
+    
+    
+    
+    
+    with col2:        
         st.markdown('### 🚀Julio Mario Duran Ramirez.')
         st.write('*Especialista en Estadística e Ingeniero Industrial* (🇨🇴).')
         
 #st.subheader('Julio Mario')
 #st.subheader('Camilo Franco Guzman')
          
-    with col2:
-        #st.image("logo_u.jpg",caption='Universidad Los Libertadores')
-        st.markdown('### 🤖 Camilo Franco Guzmán.')
-        st.markdown('*Especialista en Estadistica ,Economista y Científico de Datos* (🇨🇴).')
-
+  
 st.write('---')
 
 
@@ -83,13 +91,13 @@ st.write('---')
 tab1, tab2, tab3 = st.tabs([" ⬇️ Como usar es App               "," 👇 click Aqui !¿Quieres saber un poco del Modelo?", "Click Aqui💻Como fúe construida esta APP"])
 
 with tab2:
-   st.markdown("La Regresión Lineal o linear regression es una técnica paramétrica utilizada para predecir variables continuas dependientes, dado un conjunto de variables independientes (para el modelo simple solo una) a través del metodo OLS por sus siglas en Ingles 'Ordinary Least Square'.")
-   st.markdown("Se puede usar para los casos donde quieras predecir alguna cantidad continua por ejemplo:")
-   st.markdown("* 💵Predecir los ingresos de una empresa utilizando el gasto en publicidad como variable de predicion.")
-   st.markdown("* 💊La presíon Arterial de acuerdo a una dosificación  un determinado medicamentoa a un paciente.")   
-   st.markdown("* Cuando son Multiples variables predictoras  se llama Regresión  Multiple modelo que desarrollaré en otra app donde habrá ¡FUEGO!🧨🔥,oséa Machine Learning e Inteligencia Artificial")
-   st.markdown("🏡Para nuestro caso queremos predecir el valor de un Inmueble, casa o apartamento en función del área en mts cuadrados basados en dataset de MetroCuadrado.com para la ciudad de Bogotá")
-   st.latex(r'''y=\beta_{0} +\beta_{i}X_{i}+\epsilon _{i}''')
+    st.markdown("La Regresión Lineal o linear regression es una técnica paramétrica utilizada para predecir variables continuas dependientes, dado un conjunto de variables independientes (para el modelo simple solo una) a través del metodo OLS por sus siglas en Ingles 'Ordinary Least Square'.")
+    st.markdown("Se puede usar para los casos donde quieras predecir alguna cantidad continua por ejemplo:")
+    st.markdown("* 💵Predecir los ingresos de una empresa utilizando el gasto en publicidad como variable de predición.")
+    st.markdown("* 💊La presíon Arterial de acuerdo a una dosificación  un determinado medicamentoa a un paciente.")   
+    st.markdown("* Cuando son Multiples variables predictoras  se llama Regresión  Multiple modelo que desarrollaré en otra app donde habrá ¡FUEGO!🧨🔥,oséa Machine Learning e Inteligencia Artificial")
+    st.markdown("🏡Para nuestro caso queremos predecir el valor de un Inmueble, casa o apartamento en función del área en mts cuadrados basados en dataset de MetroCuadrado.com para la ciudad de Bogotá")
+    st.latex(r'''y=\beta_{0} +\beta_{i}X_{i}+\epsilon _{i}''')
    
 
 with tab1:
@@ -105,11 +113,11 @@ with tab1:
         st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
         
     with col2:
-        st.subheader("Usar esta App es muy fácil y Firulais lo sabe 🦴 ")
-        st.markdown("##### Ve desplegando las diferentes opciones de la parte inferior⬇️")
+        st.subheader("Usar esta App es muy fácil y Firulais lo sabe 🦴 ")        
+        st.markdown("##### Ve desplegando las diferentes opciones de la parte inferior para conocer algunos pormenores del modelo⬇️")
         st.write("")
         st.markdown("##### ⬅️Por último a la izquierda de la página encontraras una *slider* o barrita que puedes deslizar.")
-        st.write("##### Al deslizarla aumentara o disminuira el área en mts cuadrados y si señores como por arte de magia habrás pronosticado el valor del inmueble.")
+        st.write("##### Cuando lo hagas aumentara o disminuira el área en mts cuadrados y se hará la magia pronosticaras🧙‍♂️ el valor de un Inmueble.")
         st.markdown("*Dato Curioso :🐶Según las malas lenguas el origen de la palabra Firulais deriva de la expresión en inglés free of lice que en español significa “libre de pulgas”.*")
 
 
@@ -232,7 +240,7 @@ if agree:
 
 with st.expander('🧑‍🎄🎄Debe ser navidad por que aqui aparecen un par de campanas🔔'):
     st.write('')
-    st.markdown('Bueno no son de navidad lo acepto!!, pero son distribuciones con forma de campana (normales aprentemente🤫) de Nuestro amigo Gauss Jordan el Principe de las matemáticas!!')
+    st.markdown('Bueno no son de navidad lo acepto!!, pero son distribuciones con forma de campana (normales aparentemente🤫) de Nuestro amigo Gauss Jordan el Principe de las matemáticas!!')
     st.write('')
     
     with st.container():
@@ -309,7 +317,7 @@ if st.button('!NUNCA PERO NUNCA LE DES CLICK A ESTE BOTON 🚨🚫!😱'):
     st.image("boom.jpg")
     #st.subheader('Te lo dije ahora es resposabilidad tuya entender todo esto')
     
-    st.markdown('* 🤫 Bueno como no obedeciste hubo que suprimier unos cuantos outliers para que todo funcionara ✂️ 🤭 *' )
+    st.markdown('* 🤫 Bueno como no obedeciste hubo que suprimir unos cuantos outliers para que todo funcionara ✂️ 🤭 *' )
 
     
     st.code("df2=df[(df['log_marea']>1)&(df['log_venta']<11)&(df['log_venta']>7)]")
