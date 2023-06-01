@@ -1,7 +1,7 @@
 altair==4.2.0
 matplotlib==3.6.0
 numpy==1.23.4
-pandas==1.5.1
+pandas==2.0.2
 pingouin==0.5.2
 requests==2.28.1
 scipy==1.9.3
